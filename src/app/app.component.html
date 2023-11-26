@@ -1,0 +1,81 @@
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top " style="background-color: #32a039!important;">
+    <a  class="navbar-brand" style="margin-left: 1rem;"  href="#">
+      <img src="logo.jpg" width="40" height="40" alt="">
+    </a>
+    <a class="navbar-brand" style="margin-right: 5px;" href="#">APARD</a>
+    <div style="border-left: 1px solid aliceblue;height:20px;margin-right: 5px;"></div>
+    <div style="color: aliceblue; font-size: xx-small; width: 140px;">Awakening Peoples Action For Rural Development</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">
+          <a class="nav-link"  [routerLink]="['/Homepage']" style="font-weight: 500;">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;">
+            About Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <li><a class="dropdown-item" [routerLink]="['/LegalStatus']" >Legal Status</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/VisionMission']">Vision & Mission</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/BoardMembers']">Board Members</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/Profile']">Profile</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/OurSupporters']">Our Supporters</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/Awards']">Awards</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;">
+            Interventions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+            <li> <a class="dropdown-item" [routerLink]="['/NaturalResourceManagment']">NRM & Livelihoods</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/FarmerWelfare']">Farmer Producer Organisations</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/WomenChildCare']">Women & ChildCare</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/Others']">Other Activities</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">
+          <a class="nav-link"  [routerLink]="['/Reports']" style="font-weight: 500;">Reports</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">
+          <a class="nav-link"  [routerLink]="['/OurGallery']" style="font-weight: 500;">Our Gallery</a>
+          <!-- <a class="nav-link"  [routerLink]="['/Latest']" style="font-weight: 500;">Gallery</a> -->
+        </li>
+        <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">
+          <a class="nav-link"  [routerLink]="['/Donate']" style="font-weight: 500;">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-end" style="margin-left: auto;">
+        <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}" >
+          <a class="nav-link" style="color: aliceblue;"  href="mailto:apardngo@gmail.com"> <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 -1 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> apardngo@gmail.com</a>
+        </li>
+        <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">
+          <a class="nav-link" style="color: aliceblue;"  href="tel:9000571365"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 -1 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+91 9000571365</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+<footer style="width: 100%; bottom: 0rem;left: 0rem; position:fixed">
+  <span class="placeholder col-12 placeholder-lg"  style="background-color: #32a039!important; opacity: unset; cursor: initial;">
+    <a style="color: aliceblue; font-size: x-small;text-decoration: none;"  href="mailto:kuttu4444@gmail.com">Designed & Developed By Support2NGO</a>
+    <a style="color: aliceblue; font-size: x-small; margin-left: 25%;" >Copyright © 2023, All Rights Reserved to APARD</a>
+    <a style="color: aliceblue; font-size: x-small;text-decoration: none; cursor: pointer; margin-left: 38%;" href="/Upload" [routerLink]="['/Upload']">Admin Login</a>
+  </span>
+</footer>
+
+<!-- <nav class="navbar navbar-dark bg-dark" style="height: 25px;background-color: #2e547a!important;">
+  <a style="color: aliceblue; font-size: x-small;text-decoration: none;"  href="mailto:kuttu4444@gmail.com">Designed & Developed By Suhel</a>
+  <a style="color: aliceblue; font-size: x-small;" >Copyright © 2022, All Rights Reserved IDEAH</a>
+  <a style="color: aliceblue; font-size: x-small;text-decoration: none; cursor: pointer;" href="/Upload" [routerLink]="['/Upload']" style="font-weight: 500;">Admin Login</a>
+</nav> -->

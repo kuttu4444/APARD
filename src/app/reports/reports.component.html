@@ -1,0 +1,74 @@
+<div class="slidein" style="margin-top: 6rem; width: 100%;">
+
+    <div class="float-child" style="width: 20%;  background: #eff6f9; height: 504px;">
+        <div class="inbox-message" >
+            <ul>
+                <li style="border-bottom: 0px; border-right: 1px solid #e8eef1;">
+                        <div class="message-body" style="margin-left: 0px;">
+                            <div class="message-body-heading">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Annual Reports
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <button type="button" class="btn btn-outline-primary " [ngClass]="{active: isOn}"*ngIf="this.Annualreport1.length>0" style="margin-top: 2%; width:100%" (click)="openReport(1)">{{this.Annualreport1}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Annualreport2.length>0" (click)="openReport(2)">{{this.Annualreport2}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Annualreport3.length>0"(click)="openReport(3)">{{this.Annualreport3}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Annualreport4.length>0" (click)="openReport(4)">{{this.Annualreport4}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Annualreport5.length>0" (click)="openReport(5)">{{this.Annualreport5}}</button>
+                                              
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Audit Reports
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Auditreport1.length>0" (click)="openReport(6)">{{this.Auditreport1}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Auditreport2.length>0" (click)="openReport(7)">{{this.Auditreport2}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Auditreport3.length>0" (click)="openReport(8)">{{this.Auditreport3}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Auditreport4.length>0" (click)="openReport(9)">{{this.Auditreport4}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Auditreport5.length>0" (click)="openReport(10)">{{this.Auditreport5}}</button>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Recent Reports
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport1.length>0" (click)="openReport(11)">{{this.Recentreport1}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport2.length>0" (click)="openReport(12)">{{this.Recentreport2}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport3.length>0" (click)="openReport(13)">{{this.Recentreport3}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport4.length>0" (click)="openReport(14)">{{this.Recentreport4}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport5.length>0" (click)="openReport(15)">{{this.Recentreport5}}</button>
+                                            <button type="button" class="btn btn-outline-primary" style="margin-top: 2%;width:100%" *ngIf="this.Recentreport6.length>0" (click)="openReport(16)">{{this.Recentreport6}}</button>
+                                       </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="float-child" style="width: 80%;">
+        <iframe id='pdfview' frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:90%;width:80%;position:absolute;top:9%;left:20%;right:0px;bottom:0px" height="100%" width="80%"></iframe>
+   
+    </div>
+    
+  </div>

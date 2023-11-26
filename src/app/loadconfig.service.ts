@@ -1,0 +1,157 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { map, tap } from 'rxjs/operators';
+import { AppConfig } from './config.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoadconfigService {
+  public appTitle = 'Not Set Yet';
+  Annualreport1:string;
+  Annualreport2:string;
+  Annualreport3:string;
+  Annualreport4:string;
+  Annualreport5:string;
+Auditreport1:string;
+Auditreport2:string;
+Auditreport3:string;
+Auditreport4:string;
+Auditreport5:string;
+Recentreport1:string;
+Recentreport2:string;
+Recentreport3:string;
+Recentreport4:string;
+Recentreport5:string;
+Recentreport6:string;
+YoutubeName1:string;
+YoutubeName2:string;
+YoutubeName3:string;
+YoutubeName4:string;
+YoutubeName5:string;
+YoutubeName6:string;
+YoutubeName7:string;
+YoutubeName8:string;
+YoutubeName9:string;
+YoutubeName10:string;
+YoutubeURL1:string;
+YoutubeURL2:string;
+YoutubeURL3:string;
+YoutubeURL4:string;
+YoutubeURL5:string;
+YoutubeURL6:string;
+YoutubeURL7:string;
+YoutubeURL8:string;
+YoutubeURL9:string;
+YoutubeURL10:string;
+SchoolLiteracyYoutubeVideoURL:string;
+MotherChildYoutubeVideoURL:string;
+HealthCareYoutubeVideoURL:string;
+OtherActivitesYoutubeVideoURL:string;
+ProfileYoutubeVideoURL:string;
+card1:string;
+card2:string;
+card3:string;
+carddetails1:string;
+carddetails2:string;
+carddetails3:string;
+Username:string;
+Password:string;
+LegalStatusLine1:string;
+LegalStatusLine2Heading:string;
+LegalStatusLine2Value:string;
+LegalStatusLine3Heading:string;
+LegalStatusLine3Value:string;
+LegalStatusLine4Heading:string;
+LegalStatusLine4Value:string;
+LegalStatusLine5Heading:string;
+LegalStatusLine5Value:string;
+LegalStatusLine6:string;
+LegalStatusLine7:string;
+LegalStatusLine8:string;
+LegalStatusLine9Heading:string;
+LegalStatusLine9Value:string;
+LegalStatusLine10Heading:string;
+LegalStatusLine10Value:string;
+LegalStatusLine11Heading:string;
+LegalStatusLine11Value:string;
+HomePageYoutubeVideoURL:string;
+SmallHomePageYoutubeVideoURL:string
+
+  constructor(private httpClient: HttpClient) { }
+  initialize() {
+    return this.httpClient.get<AppConfig>('./config.json')
+    .pipe(tap((response: AppConfig) => {
+      this.Username=response.UserName;
+      this.Password=response.Password;
+      this.appTitle = response.mine;
+      this.Annualreport1=response.Annualreport1;
+      this.Annualreport2=response.Annualreport2;
+      this.Annualreport3=response.Annualreport3;
+      this.Annualreport4=response.Annualreport4;
+      this.Annualreport5=response.Annualreport5;
+      this.Auditreport1=response.Auditreport1;
+      this.Auditreport2=response.Auditreport2;
+      this.Auditreport3=response.Auditreport3;
+      this.Auditreport4=response.Auditreport4;
+      this.Auditreport5=response.Auditreport5;
+      this.Recentreport1=response.Recentreport1;
+      this.Recentreport2=response.Recentreport2;
+      this.Recentreport3=response.Recentreport3;
+      this.Recentreport4=response.Recentreport4;
+      this.Recentreport5=response.Recentreport5;
+      this.Recentreport6=response.Recentreport6;
+      this.YoutubeName1=response.YoutubeVideoName1;
+      this.YoutubeName2=response.YoutubeVideoName2;
+      this.YoutubeName3=response.YoutubeVideoName3;
+      this.YoutubeName4=response.YoutubeVideoName4;
+      this.YoutubeName5=response.YoutubeVideoName5;
+      this.YoutubeName6=response.YoutubeVideoName6;
+      this.YoutubeName7=response.YoutubeVideoName7;
+      this.YoutubeName8=response.YoutubeVideoName8;
+      this.YoutubeName9=response.YoutubeVideoName9;
+      this.YoutubeName10=response.YoutubeVideoName10;
+      this.YoutubeURL1=response.YoutubeVideoURL1;
+      this.YoutubeURL2=response.YoutubeVideoURL2;
+      this.YoutubeURL3=response.YoutubeVideoURL3;
+      this.YoutubeURL4=response.YoutubeVideoURL4;
+      this.YoutubeURL5=response.YoutubeVideoURL5;
+      this.YoutubeURL6=response.YoutubeVideoURL6;
+      this.YoutubeURL7=response.YoutubeVideoURL7;
+      this.YoutubeURL8=response.YoutubeVideoURL8;
+      this.YoutubeURL9=response.YoutubeVideoURL9;
+      this.YoutubeURL10=response.YoutubeVideoURL10;
+      this.HomePageYoutubeVideoURL=response.HomePageYoutubeVideoURL;
+      this.SmallHomePageYoutubeVideoURL=response.SmallHomePageYoutubeVideoURL;
+      this.SchoolLiteracyYoutubeVideoURL=response.SchoolLiteracyYoutubeVideoURL;
+      this.HealthCareYoutubeVideoURL=response.HealthCareYoutubeVideoURL;
+      this.OtherActivitesYoutubeVideoURL=response.OtherActivitesYoutubeVideoURL
+      this.MotherChildYoutubeVideoURL=response.MotherChildYoutubeVideoURL;
+      this.ProfileYoutubeVideoURL=response.ProfileYoutubeVideoURL;
+      this.card1=response.Homepagecard1;
+      this.card2=response.Homepagecard2;
+      this.card3=response.Homepagecard3;
+      this.carddetails1=response.Homepagecarddetails1;
+      this.carddetails2=response.Homepagecarddetails2;
+      this.carddetails3=response.Homepagecarddetails3;
+      this.LegalStatusLine1=response.LegalStatusLine1;
+      this.LegalStatusLine2Heading=response.LegalStatusLine2Heading;
+      this.LegalStatusLine2Value=response.LegalStatusLine2Value;
+      this.LegalStatusLine3Heading=response.LegalStatusLine3Heading;
+      this.LegalStatusLine3Value=response.LegalStatusLine3Value;
+      this.LegalStatusLine4Heading=response.LegalStatusLine4Heading;
+      this.LegalStatusLine4Value=response.LegalStatusLine4Value;
+      this.LegalStatusLine5Heading=response.LegalStatusLine5Heading;
+      this.LegalStatusLine5Value=response.LegalStatusLine5Value;
+      this.LegalStatusLine6=response.LegalStatusLine6;
+      this.LegalStatusLine7=response.LegalStatusLine7;
+      this.LegalStatusLine8=response.LegalStatusLine8;
+      this.LegalStatusLine9Heading=response.LegalStatusLine9Heading;
+      this.LegalStatusLine9Value=response.LegalStatusLine9Value;
+      this.LegalStatusLine10Heading=response.LegalStatusLine10Heading;
+      this.LegalStatusLine10Value=response.LegalStatusLine10Value;
+      this.LegalStatusLine11Heading=response.LegalStatusLine11Heading;
+      this.LegalStatusLine11Value=response.LegalStatusLine11Value;
+    })).toPromise<AppConfig>();
+  }
+}

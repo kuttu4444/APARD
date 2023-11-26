@@ -1,0 +1,67 @@
+<div class="container slidein" style="max-width: 100%;width: 100%;margin-top: 6rem;">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 400px;">
+        <iframe id="videoview1" width="1280" height="720" title="YouTube video player" style="object-fit:fill; width: 100%;height: 100%;"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+    <div class="card-group">
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{this.card1}}</h5>
+          <p class="card-text">{{this.carddetails1}}</p>
+          <iframe id="videoview" width="100%" height="75%" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+        </div>
+        <!-- <div class="card-footer">
+          <iframe id="videoview" width="100%" height="100%" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{this.card2}}</h5>
+          <p class="card-text">{{this.carddetails2}}</p>
+          <img src="APMAP.jpg" width="100%">
+          </div>
+        <div class="card-footer">  
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{this.card3}}</h5>
+          <p class="card-text">{{this.carddetails3}}</p>
+          <img class="d-block w-100" src="APCRC Logo.jpg">
+          <!-- <span class="badge rounded-pill bg-light text-dark"><p>For more Details Visit: <a href="http://www.ideah.org/ " target="_blank" rel="noopener noreferrer">http://www.ideah.org/</a></p>
+          </span> -->
+           </div>
+        <!-- <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div> -->
+      </div>
+      <!-- <div class="card text-center">
+        <div class="card-header bg-primary"  style="color: aliceblue; font-weight: bold;">
+          UPDATE
+        </div>
+        <div class="card-body">
+          <iframe id='pdfview' frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:5%;left:0%;right:0px;bottom:0px" height="100%" width="100%"  src="HomepageUpdate.pdf#view=FitH&toolbar=0&scrollbar=0"></iframe>
+        </div>
+      </div> -->
+    </div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="width: 40%;">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">UPDATES</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <iframe id='pdfview' frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:7%;left:0%;right:0px;bottom:0px" height="100%" width="100%"  src="HomepageUpdate.pdf#view=FitH&toolbar=0&scrollbar=0"></iframe>
+  </div>
+</div>
+<button class="btn-primary floating-right-bottom-btn"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">UPDATES
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+   </div>
