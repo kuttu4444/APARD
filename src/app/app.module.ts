@@ -29,7 +29,9 @@ import { OpenreportsComponent } from './openreports/openreports.component';
 import { OurGalleryComponent } from './our-gallery/our-gallery.component';
 import { LinkvideosComponent } from './linkvideos/linkvideos.component';
 import { DynamicreportComponent } from './dynamicreport/dynamicreport.component';
-import { AwardsComponent } from './awards/awards.component' 
+import { AwardsComponent } from './awards/awards.component';
+import { OnlylinkreportsComponent } from './onlylinkreports/onlylinkreports.component';
+import { ProjectsComponent } from './projects/projects.component' 
 const appRoutes:Routes=[
   {path:'',component:HomePageComponent},
   {path:'Homepage',component:HomePageComponent},
@@ -53,6 +55,8 @@ const appRoutes:Routes=[
   {path:'OurGallery',component:OurGalleryComponent},
   {path:'LinkVideos',component:LinkvideosComponent},
   {path:'Awards',component:AwardsComponent},
+  {path:'Projects',component:ProjectsComponent},
+  {path:'ProjectsLink',component:OnlylinkreportsComponent},
 ]
 @NgModule({
   declarations: [
@@ -78,7 +82,9 @@ const appRoutes:Routes=[
     OurGalleryComponent,
     LinkvideosComponent,
     DynamicreportComponent,
-    AwardsComponent
+    AwardsComponent,
+    OnlylinkreportsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,FormsModule, PdfViewerModule, HttpClientModule,RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),NgJsonEditorModule
